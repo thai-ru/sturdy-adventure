@@ -28,8 +28,8 @@ class MainActivity : AppCompatActivity() {
 
             //Check no field is empty
 
-            if (RedChannelText.isEmpty() && GreenChannelText.isEmpty() && BlueChannelText.isEmpty()){
-                Toast.makeText(this,"All values are requiored! 😒", Toast.LENGTH_LONG).show()
+            if (RedChannelText.isEmpty() or GreenChannelText.isEmpty() or BlueChannelText.isEmpty()){
+                Toast.makeText(this,"All values are required! 😒", Toast.LENGTH_LONG).show()
             }
             else{
                 // Check if 2 hexadecimal characters have been added and if not add the same hexadecimal color again
